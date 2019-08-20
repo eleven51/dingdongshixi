@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>管理员</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+	<link rel="stylesheet" href="assets/css/ready.css">
+	<link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<nav class="navbar navbar-header navbar-expand-lg">
+				<div class="container-fluid">					
+					<form class="navbar-left navbar-form nav-search mr-md-3" action="">
+						<div class="input-group">
+							<input type="text" placeholder="Search ..." class="form-control">
+							<div class="input-group-append">
+								<span class="input-group-text">
+									<i class="la la-search search-icon"></i>
+								</span>
+							</div>
+						</div>
+					</form>   <!--搜索框-->
+
+					<div clas="index">
+				        <a href="xxxx"><h5>首页</h5></a>
+				    </div>
+				    <div clas="index">
+				        <a href="xxxx"><h5>联系我们</h5></a>
+				    </div>
+				</div>
+			</nav>
+		</div>
+
+			<div class="sidebar">
+				<div class="scrollbar-inner sidebar-wrapper">
+					<div class="user">
+						<div class="photo">
+							<img src="assets/img/profile.jpg">
+						</div>
+						<div class="info">
+							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									Hizrian
+									<span class="user-level">Administrator</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+
+							<div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+								<ul class="nav">
+									<li>
+										<a href="#profile">
+											<span class="link-collapse">My Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#edit">
+											<span class="link-collapse">Edit Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#settings">
+											<span class="link-collapse">Settings</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="nav">
+						<li class="nav-item active">
+							<a href="index.html">
+								<i class="la la-dashboard"></i>
+								<p>管理员首页</p>
+								<span class="badge badge-count">5</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="sign-Day.html">
+								<i class="la la-table"></i>
+								<p>打卡日志</p>
+								<span class="badge badge-count">14</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="sign-Month.html">
+								<i class="la la-keyboard-o"></i>
+								<p>打卡月历</p>
+								<span class="badge badge-count">50</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="aprove.html">
+								<i class="la la-font"></i>
+								<p>审批</p>
+								<span class="badge badge-danger">25</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="main-panel">
+				<div class="content">
+					<div class="container-fluid">
+						<h4 class="page-title">Dashboard</h4>
+
+						<div class="row">
+							<!--80%饼图-->
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">出勤率</h4>
+										<p class="card-category">xxxx-xx-xx</p>
+									</div>
+									<div class="card-body">
+										<div id="task-complete" class="chart-circle mt-4 mb-3"></div>
+									</div>
+									<div class="card-footer">
+										<div class="legend"><i class="la la-circle text-primary"></i> Completed</div>
+									</div>
+								</div>
+							</div>
+
+							<!--审批表格-->
+							<div class="card card-tasks">
+									<div class="card-header ">
+										<h4 class="card-title">审批</h4>
+										<p class="card-category">xxxx-xx-xx</p>
+									</div>
+									<div class="card-body ">
+										<div class="table-full-width">
+											<table class="table">												
+												<!--表头4列-->
+												<thead>
+													<tr>
+														<th>
+															<div class="form-check">
+																<label class="form-check-label">
+																	<input class="form-check-input  select-all-checkbox" type="checkbox" data-select="checkbox" data-target=".task-select">
+																	<span class="form-check-sign"></span>
+																</label>
+															</div>
+														</th>
+														<th>姓名</th>
+														<th>请假理由</th>
+														<th>是否通过</th>
+													</tr>
+												</thead>
+
+												<!--表格主体内容-->
+												<tbody>
+													<tr>
+														<td>
+															<div class="form-check">
+																<label class="form-check-label">
+																	<input class="form-check-input task-select" type="checkbox">
+																	<span class="form-check-sign"></span>
+																</label>
+															</div>
+														</td>
+														<td>李华</td>
+														<td>外出</td>
+														<!--表格Action这一列-->
+														<td class="td-actions text-right">
+															<div class="form-button-action">
+																<button type="button" data-toggle="tooltip" title="Agree" class="btn btn-link <btn-simple-primary">
+																	<i class="la la-edit"></i>
+																</button>
+																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
+																	<i class="la la-times"></i>
+																</button>
+															</div>
+														</td>
+													</tr>
+
+													<tr>
+														<td>
+															<div class="form-check">
+																<label class="form-check-label">
+																	<input class="form-check-input task-select" type="checkbox">
+																	<span class="form-check-sign"></span>
+																</label>
+															</div>
+														</td>
+														<td>韩梅梅</td>
+														<td>加班</td>
+														<td class="td-actions text-right">
+															<div class="form-button-action">
+																<button type="button" data-toggle="tooltip" title="Agree" class="btn btn-link <btn-simple-primary">
+																	<i class="la la-edit"></i>
+																</button>
+																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
+																	<i class="la la-times"></i>
+																</button>
+															</div>
+														</td>
+													</tr>
+
+													<tr>
+														<td>
+															<div class="form-check">
+																<label class="form-check-label">
+																	<input class="form-check-input task-select" type="checkbox">
+																	<span class="form-check-sign"></span>
+																</label>
+															</div>
+														</td>
+														<td>李四</td>
+														<td>迟到</td>
+														<td class="td-actions text-right">
+															<div class="form-button-action">
+																<button type="button" data-toggle="tooltip" title="Agree" class="btn btn-link <btn-simple-primary">
+																	<i class="la la-edit"></i>
+																</button>
+																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
+																	<i class="la la-times"></i>
+																</button>
+															</div>
+														</td>
+													</tr>
+
+													<tr>
+														<td>
+															<div class="form-check">
+																<label class="form-check-label">
+																	<input class="form-check-input task-select" type="checkbox">
+																	<span class="form-check-sign"></span>
+																</label>
+															</div>
+														</td>
+														<td>张三</td>
+														<td>迟到</td>
+														<td class="td-actions text-right">
+															<div class="form-button-action">
+																<button type="button" data-toggle="tooltip" title="EAgree" class="btn btn-link <btn-simple-primary">
+																	<i class="la la-edit"></i>
+																</button>
+																<button type="button" data-toggle="tooltip" title="Remove" class="btn btn-link btn-simple-danger">
+																	<i class="la la-times"></i>
+																</button>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="card-footer ">
+										<div class="stats">
+											<i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
+										</div>
+									</div>
+						    </div>
+
+						</div>
+					</div>
+				</div>
+
+				<!--页面底部-->
+				<footer class="footer">
+					<div class="container-fluid">
+						<nav class="pull-left">
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										ThemeKita
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										Help
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#license/#free-item">
+										Licenses
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="copyright ml-auto">
+							2019 made by <a href="xxxx">Dindong</a>
+						</div>				
+					</div>
+				</footer>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePro" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-primary">
+					<h6 class="modal-title"><i class="la la-frown-o"></i> Under Development</h6>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-center">									
+					<p>Currently the pro version of the <b>Ready Dashboard</b> Bootstrap is in progress development</p>
+					<p>
+						<b>We'll let you know when it's done</b></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugin/chartist/chartist.min.js"></script>
+<script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
+<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="assets/js/ready.min.js"></script>
+<script src="assets/js/demo.js"></script>
+</html>
