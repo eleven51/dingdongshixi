@@ -1,24 +1,194 @@
+<!doctype html>
+<html  lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>管理员注册</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- signin end -->
+		<section class="signin signup">
+			<div class="container">
+
+				<div class="sign-content">
+					<h2>管理员注册</h2>
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="signin-form">
+								<form action="/doregister" method="get">
+									<div class="form-col">
+
+										<div class="form-group">
+										    <label for="signin_form">  姓名</label>
+										    <input type="text" name="mname" class="form-control" id="signin_form" placeholder="">
+										</div><!--/.form-group -->
 
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>管理员注册</title>
-</head>
-<body>
-<div align="center">
-    <h1>管理员注册</h1>
-    <img src="../static/image/dingdong.jpg" width="20%" height="20%">
-    <form action="/doregister_mana" method="get">
-        姓名:  <input type="text" name="mname"><br>
-        电话:  <input type="number" name="mphone"><br>
-        公司:  <input type="text" name="mcompany"><br>
-        密码:  <input type="password" name="mpassword"><br>
-        再次确认:<input type="password" name="smpassword"><br>
-        <input type="submit" value="注册">
-        <input type="reset" value="重置">
-    </form>
-</div>
+									</div><!--/.form-col -->
+									<div class="form-col1">
+										<div class="form-group">
+											<label for="signin_form">手机号</label>
+										    <input type="number" name="mphone" class="form-control" id="signin_form" placeholder="">
+										</div><!--/.form-group -->
 
-</body>
+
+									</div><!--/.form-col1 -->
+									<div class="form-group">
+										<label for="signin_form">公司名称</label>
+									    <input type="text" class="form-control" id="signin_form" name="mcompany" placeholder=" ">
+									</div><!--/.form-group -->
+
+
+									<div class="form-group">
+										<label for="signin_form">密码</label>
+									    <input type="password" class="form-control" id="signin_form" name="mpassword" placeholder=" ">
+									</div><!--/.form-group -->
+
+
+									<div class="form-group">
+										<label for="signin_form">确认密码</label>
+									    <input type="password" name="upwd2" class="form-control" id="signin_form" name="smpassword" placeholder=" ">
+									</div><!--/.form-group -->
+
+
+								</form><!--/form -->
+							</div><!--/.signin-form -->
+						</div><!--/.col -->
+					</div><!--/.row -->
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="signin-password">
+								<div class="awesome-checkbox-list">
+									<ul class="unstyled centered">
+
+										<li>
+										    <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+										    <label for="styled-checkbox-2">同意我们的协议</label>
+										</li>
+
+										<li></li>
+
+									</ul>
+								</div><!--/.awesome-checkbox-list -->
+							</div><!--/.signin-password -->
+						</div><!--/.col -->
+					</div><!--/.row -->
+
+
+
+
+
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="signin-footer">
+								<button type="button" class="btn signin_btn" data-toggle="modal" data-target=".signin_modal">
+								注册
+								</button>
+								<button type="button" class="btn signin_btn" data-toggle="modal" data-target=".signin_modal">
+								重置
+								</button>
+								<p>
+									记住你的账号了吗 ?
+									<a href="signin.html">登录</a>
+								</p>
+							</div><!--/.signin-footer -->
+						</div><!--/.col-->
+					</div><!--/.row -->
+
+				</div><!--/.sign-content -->
+
+
+
+
+				<!-- modal part start -->
+				
+				<!-- modal part end -->
+			</div><!--/.container -->
+
+		</section><!--/.signin -->
+		
+		<!-- signin end -->
+
+
+
+
+		<!--footer copyright start -->
+		<footer class="footer-copyright">
+			<div id="scroll-Top">
+				<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+			</div><!--/.scroll-Top-->
+
+		</footer><!--/.hm-footer-copyright-->
+		<!--footer copyright  end -->
+
+
+		 <!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+
+    </body>
+	
 </html>
