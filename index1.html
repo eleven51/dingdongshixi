@@ -1,16 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>首页</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>叮咚考勤</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets1/images/favicon.ico">
+    
+    <!-- CSS 
+    ========================= -->
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets1/css/bootstrap.min.css">
+    
+    <!-- Fonts CSS -->
+    <link rel="stylesheet" href="assets1/css/bicon.min.css">
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets1/css/plugins.css">
+    
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets1/css/style.css">
+    
+    <!-- Modernizer JS -->
+    <script src="assets1/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
 
-{% block body %}
-    <h1>home page</h1>
-    <p>Do you want to <a href="{{ url_for('user_login') }}">log in?</a>or <a href="{{ url_for
-            ('select')}}"> register a new account?</a>
-{% endblock %}
+<!-- Main Wrapper Start -->
+<div class="main-wrapper">
+   
+    <!-- Header-area start -->
+    <header class="header header-sticky">
+        <div class="header-area inner-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <!-- logo Start -->
+                        <div class="logo">
+                            <a href="index.html"></a>
+
+                        </div><!--// logo End -->
+                    </div>
+                    <div class="col-lg-8">
+                        <!-- main-menu-area Start -->
+                        <div class="main-menu">
+                            <nav class="main-navigation">
+                                <ul>
+                                    <li><a href="index.html">主页</a></li>
+                                    <li><a href="{{ url_for('user_login') }}">注册</a></li>
+                                    <li><a href="{{ url_for('select')}}">登录</a></li>
+                                </ul>
+                            </nav>
+                        </div><!--// main-menu-area End -->
+                    </div>
+                    <div class="col">
+                        <!-- mobile-menu start -->
+                        <div class="mobile-menu d-block d-lg-none"></div>
+                        <!-- mobile-menu end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header-area end -->
+    
+    <!-- Hero Slider start -->
+    <div class="hero-slider hero-slider-1">
+        <div class="single-slide" style="background-image: url(assets1/images/slider/slide-bg-1.png)">
+            <div class="home-decor">
+                <div class="home-overlay-img-1">
+                    <img src="assets1/images/slider/seomar02.png" alt="">
+                </div> 
+            </div>
+            <!-- Hero Content One Start -->
+            <div class="hero-content-one container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 col-md-7 order-md-1 order-2"> 
+                        <!-- slider-text-info Start -->
+                        <div class="slider-text-info">
+                            
+                            <h1><span class="color-two">叮咚</span> 一下，<span class="color-two">极速</span> 打卡</h1>
+                         
+
+
+                        </div><!--// slider-text-info End -->
+                    </div>
+                    <div class="col-xl-6 col-lg-5 col-md-5 order-md-2 order-1"> 
+                        <!-- slider-inner-image Start -->
+                        <div class="slider-inner-image">
+                            <img src="assets1/images/slider/slide-inner-1.png" alt="">
+                        </div><!--// slider-inner-image End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Content One End -->
+        </div>
+    </div>
+    <!-- Hero Slider end -->
+    
+
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area footer-bg">
+        <!-- Footer-top Start -->
+        <div class="footer-top pt--50 pb--100">
+            <div class="container">
+                <div class="row">
+                   
+                </div>
+            </div>
+        </div><!--// Footer-top End -->
+        
+        <!-- footer-bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom-inner text-center">
+                            <p>Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--// footer-bottom End -->
+    </footer>
+    <!-- Footer Area End -->
+    
+</div>
+<!-- Main Wrapper End -->
+
+<!-- JS
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="assets1/js/vendor/jquery-1.12.4.min.js"></script>
+<!-- Popper JS -->
+<script src="assets1/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets1/js/bootstrap.min.js"></script>
+<!-- Plugins JS -->
+<script src="assets1/js/plugins.js"></script>
+<!-- Ajax Mail -->
+<script src="assets1/js/ajax-mail.js"></script>
+<!-- Main JS -->
+<script src="assets1/js/main.js"></script>
+
 
 </body>
+
 </html>
