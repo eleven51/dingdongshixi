@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+{% block body %}
+    <h1>home page</h1>
+    <p>Do you want to <a href="{{ url_for('user_login') }}">log in?</a>or <a href="{{ url_for
+            ('select')}}"> register a new account?</a>
+{% endblock %}
+
+</body>
+</html>

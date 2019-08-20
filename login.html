@@ -6,9 +6,11 @@
 </head>
 <body>
   <form action="/dologin" method="get">
-      phone:<input type="text" name="phone">
-      password:<input type="password" name="pwd">
-      <input type="submit" name="login" value="登录">
+      选择身份：<input type="radio" name="position" value="staff" checked>staff
+      <input type="radio" name="position" value="manager">manager<br>
+      phone:<input type="text" name="phone"><br>
+      password:<input type="password" name="pwd"><br>
+      <input type="submit" name="login" value="登录"><br>
   </form>
 
 </body>
